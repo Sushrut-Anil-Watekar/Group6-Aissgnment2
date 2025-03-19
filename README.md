@@ -24,7 +24,7 @@ Ensure you have the following installed:
 To clone this repository, use the following command:
 
 ```sh
- git clone <repository-url>
+ git clone https://github.com/Sushrut-Anil-Watekar/Group6-Aissgnment2
  cd btree-database
 ```
 
