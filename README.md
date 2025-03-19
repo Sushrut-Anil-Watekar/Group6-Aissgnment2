@@ -73,7 +73,6 @@ This will run the JUnit test suite to validate the correctness of insertions, de
 │   │   │   │   ├── BTreeTest.java
 │   │   │   │   ├── TreePerformanceTest.java
 ├── pom.xml (Maven build configuration)
-├── README.md
 ```
 
 ---
