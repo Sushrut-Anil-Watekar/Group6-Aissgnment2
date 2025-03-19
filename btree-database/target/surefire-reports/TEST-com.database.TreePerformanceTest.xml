@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.database.TreePerformanceTest" time="1.222" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\watek\Desktop\btree-database\target\test-classes;C:\Users\watek\Desktop\btree-database\target\classes;C:\Users\watek\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\watek\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\watek\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\watek\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\watek\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\watek\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Dublin"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\watek\AppData\Local\Temp\surefire11269132265834088224\surefirebooter-20250319213549574_3.jar C:\Users\watek\AppData\Local\Temp\surefire11269132265834088224 2025-03-19T21-35-49_302-jvmRun1 surefire-20250319213549574_1tmp surefire_0-20250319213549574_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\watek\Desktop\btree-database\target\test-classes;C:\Users\watek\Desktop\btree-database\target\classes;C:\Users\watek\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\watek\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\watek\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\watek\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\watek\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\watek\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\watek"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\watek\Desktop\btree-database"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\watek\AppData\Local\Temp\surefire11269132265834088224\surefirebooter-20250319213549574_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="watek"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\watek\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\watek\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\watek\Desktop\btree-database"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\xpressmp\bin;C:\xpressmp\workbench;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\watek\AppData\Local\Microsoft\WindowsApps;C:\Users\watek\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\watek\AppData\Roaming\npm;C:\Program Files\apache-maven-3.9.9\bin;C:\Users\watek\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\watek\AppData\Local\Programs\Python\Python313\;C:\Users\watek\AppData\Local\Microsoft\WindowsApps;C:\Users\watek\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\watek\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.4.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testPerformance" classname="com.database.TreePerformanceTest" time="1.219">
+    <system-out><![CDATA[
+DataType: Random | Size: 10000
+Insertion (ms) | AVL: 19.2956 | RB: 8.3007 | BTree: 4.2701
+Search (ms)    | AVL: 4.8937 | RB: 6.5428 | BTree: 6.4004
+Height         | AVL: 16 | BTree: 6
+BTree Nodes    | 3139
+Memory Used: 1.3251 MB
+------------------------------------------------------
+
+DataType: Sorted | Size: 10000
+Insertion (ms) | AVL: 5.1812 | RB: 3.7771 | BTree: 2.3423
+Search (ms)    | AVL: 2.7327 | RB: 2.8714 | BTree: 2.4989
+Height         | AVL: 14 | BTree: 7
+BTree Nodes    | 4996
+Memory Used: 1.5253 MB
+------------------------------------------------------
+
+DataType: Skewed | Size: 10000
+Insertion (ms) | AVL: 6.6091 | RB: 5.2238 | BTree: 2.7717
+Search (ms)    | AVL: 2.7272 | RB: 3.1892 | BTree: 2.7185
+Height         | AVL: 16 | BTree: 7
+BTree Nodes    | 4529
+Memory Used: 1.4754 MB
+------------------------------------------------------
+
+DataType: Random | Size: 50000
+Insertion (ms) | AVL: 25.1559 | RB: 51.8170 | BTree: 26.7441
+Search (ms)    | AVL: 3.6552 | RB: 3.3865 | BTree: 3.6496
+Height         | AVL: 19 | BTree: 7
+BTree Nodes    | 15622
+Memory Used: 6.6276 MB
+------------------------------------------------------
+
+DataType: Sorted | Size: 50000
+Insertion (ms) | AVL: 21.7379 | RB: 17.7528 | BTree: 12.5473
+Search (ms)    | AVL: 1.9550 | RB: 2.6306 | BTree: 2.6362
+Height         | AVL: 16 | BTree: 9
+BTree Nodes    | 24994
+Memory Used: 7.7661 MB
+------------------------------------------------------
+
+DataType: Skewed | Size: 50000
+Insertion (ms) | AVL: 12.5029 | RB: 21.3037 | BTree: 13.9348
+Search (ms)    | AVL: 2.1287 | RB: 2.7307 | BTree: 3.1678
+Height         | AVL: 19 | BTree: 9
+BTree Nodes    | 22696
+Memory Used: 7.4398 MB
+------------------------------------------------------
+
+DataType: Random | Size: 100000
+Insertion (ms) | AVL: 45.7783 | RB: 67.0178 | BTree: 27.3368
+Search (ms)    | AVL: 3.2288 | RB: 3.5055 | BTree: 3.8621
+Height         | AVL: 20 | BTree: 8
+BTree Nodes    | 31274
+Memory Used: 13.3842 MB
+------------------------------------------------------
+
+DataType: Sorted | Size: 100000
+Insertion (ms) | AVL: 25.2054 | RB: 37.1984 | BTree: 12.1755
+Search (ms)    | AVL: 1.4757 | RB: 1.3232 | BTree: 1.2194
+Height         | AVL: 17 | BTree: 9
+BTree Nodes    | 49995
+Memory Used: 15.3454 MB
+------------------------------------------------------
+
+DataType: Skewed | Size: 100000
+Insertion (ms) | AVL: 32.8120 | RB: 50.2444 | BTree: 22.4303
+Search (ms)    | AVL: 1.6864 | RB: 1.6791 | BTree: 1.9051
+Height         | AVL: 20 | BTree: 9
+BTree Nodes    | 45375
+Memory Used: 14.8657 MB
+------------------------------------------------------
+]]></system-out>
+  </testcase>
+</testsuite>

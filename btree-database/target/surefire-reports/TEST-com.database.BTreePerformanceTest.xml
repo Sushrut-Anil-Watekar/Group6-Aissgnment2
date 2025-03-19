@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.database.BTreePerformanceTest" time="8.708" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\watek\Desktop\btree-database\target\test-classes;C:\Users\watek\Desktop\btree-database\target\classes;C:\Users\watek\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\watek\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\watek\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\watek\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\watek\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\watek\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Dublin"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\watek\AppData\Local\Temp\surefire11269132265834088224\surefirebooter-20250319213549574_3.jar C:\Users\watek\AppData\Local\Temp\surefire11269132265834088224 2025-03-19T21-35-49_302-jvmRun1 surefire-20250319213549574_1tmp surefire_0-20250319213549574_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\watek\Desktop\btree-database\target\test-classes;C:\Users\watek\Desktop\btree-database\target\classes;C:\Users\watek\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\watek\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\watek\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\watek\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\watek\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.1\junit-jupiter-engine-5.8.1.jar;C:\Users\watek\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\watek"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\watek\Desktop\btree-database"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\watek\AppData\Local\Temp\surefire11269132265834088224\surefirebooter-20250319213549574_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="watek"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\watek\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\watek\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\watek\Desktop\btree-database"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\xpressmp\bin;C:\xpressmp\workbench;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\watek\AppData\Local\Microsoft\WindowsApps;C:\Users\watek\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\watek\AppData\Roaming\npm;C:\Program Files\apache-maven-3.9.9\bin;C:\Users\watek\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\watek\AppData\Local\Programs\Python\Python313\;C:\Users\watek\AppData\Local\Microsoft\WindowsApps;C:\Users\watek\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\watek\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.4.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runPerformanceTests" classname="com.database.BTreePerformanceTest" time="8.686">
+    <system-out><![CDATA[DataType: Random | Size: 10000 | Order: 2
+B-Tree Insertion: 6.8778 ms | BST Insertion: 15.6053 ms
+B-Tree Search: 7.7564 ms | BST Search: 8.9438 ms
+B-Tree Deletion: 0.5386 ms | BST Deletion: 8.3438 ms
+---------------------------------------------
+DataType: Sorted | Size: 10000 | Order: 2
+B-Tree Insertion: 3.5232 ms | BST Insertion: 15.5938 ms
+B-Tree Search: 2.8361 ms | BST Search: 4.8255 ms
+B-Tree Deletion: 0.3863 ms | BST Deletion: 1.6579 ms
+---------------------------------------------
+DataType: Skewed | Size: 10000 | Order: 2
+B-Tree Insertion: 14.7069 ms | BST Insertion: 9.1106 ms
+B-Tree Search: 18.1092 ms | BST Search: 1.3819 ms
+B-Tree Deletion: 0.1346 ms | BST Deletion: 2.9753 ms
+---------------------------------------------
+DataType: Random | Size: 10000 | Order: 3
+B-Tree Insertion: 16.2091 ms | BST Insertion: 4.5638 ms
+B-Tree Search: 2.2901 ms | BST Search: 2.9965 ms
+B-Tree Deletion: 0.0786 ms | BST Deletion: 1.8645 ms
+---------------------------------------------
+DataType: Sorted | Size: 10000 | Order: 3
+B-Tree Insertion: 1.9317 ms | BST Insertion: 1.2749 ms
+B-Tree Search: 0.8839 ms | BST Search: 0.9586 ms
+B-Tree Deletion: 0.1310 ms | BST Deletion: 0.9369 ms
+---------------------------------------------
+DataType: Skewed | Size: 10000 | Order: 3
+B-Tree Insertion: 4.3840 ms | BST Insertion: 2.0165 ms
+B-Tree Search: 1.6308 ms | BST Search: 1.8130 ms
+B-Tree Deletion: 0.0613 ms | BST Deletion: 1.0810 ms
+---------------------------------------------
+DataType: Random | Size: 10000 | Order: 4
+B-Tree Insertion: 1.5271 ms | BST Insertion: 5.3934 ms
+B-Tree Search: 1.5768 ms | BST Search: 1.9846 ms
+B-Tree Deletion: 0.0764 ms | BST Deletion: 1.8926 ms
+---------------------------------------------
+DataType: Sorted | Size: 10000 | Order: 4
+B-Tree Insertion: 1.2221 ms | BST Insertion: 4.3009 ms
+B-Tree Search: 3.1871 ms | BST Search: 1.4405 ms
+B-Tree Deletion: 1.2941 ms | BST Deletion: 1.6327 ms
+---------------------------------------------
+DataType: Skewed | Size: 10000 | Order: 4
+B-Tree Insertion: 1.5534 ms | BST Insertion: 5.9397 ms
+B-Tree Search: 1.6274 ms | BST Search: 2.4822 ms
+B-Tree Deletion: 0.1741 ms | BST Deletion: 1.6763 ms
+---------------------------------------------
+DataType: Random | Size: 10000 | Order: 5
+B-Tree Insertion: 2.2913 ms | BST Insertion: 9.3509 ms
+B-Tree Search: 2.7295 ms | BST Search: 1.9253 ms
+B-Tree Deletion: 0.0588 ms | BST Deletion: 2.5082 ms
+---------------------------------------------
+DataType: Sorted | Size: 10000 | Order: 5
+B-Tree Insertion: 0.4738 ms | BST Insertion: 2.3442 ms
+B-Tree Search: 0.7331 ms | BST Search: 0.9495 ms
+B-Tree Deletion: 0.0739 ms | BST Deletion: 0.4000 ms
+---------------------------------------------
+DataType: Skewed | Size: 10000 | Order: 5
+B-Tree Insertion: 0.8058 ms | BST Insertion: 2.6883 ms
+B-Tree Search: 0.8279 ms | BST Search: 0.9611 ms
+B-Tree Deletion: 0.0553 ms | BST Deletion: 0.6310 ms
+---------------------------------------------
+DataType: Random | Size: 50000 | Order: 2
+B-Tree Insertion: 66.5183 ms | BST Insertion: 47.8773 ms
+B-Tree Search: 3.4292 ms | BST Search: 2.8211 ms
+B-Tree Deletion: 0.0075 ms | BST Deletion: 2.7288 ms
+---------------------------------------------
+DataType: Sorted | Size: 50000 | Order: 2
+B-Tree Insertion: 20.1428 ms | BST Insertion: 11.2765 ms
+B-Tree Search: 1.7755 ms | BST Search: 1.0151 ms
+B-Tree Deletion: 0.0745 ms | BST Deletion: 0.4717 ms
+---------------------------------------------
+DataType: Skewed | Size: 50000 | Order: 2
+B-Tree Insertion: 11.5767 ms | BST Insertion: 15.1413 ms
+B-Tree Search: 2.5148 ms | BST Search: 1.3202 ms
+B-Tree Deletion: 0.0902 ms | BST Deletion: 1.0312 ms
+---------------------------------------------
+DataType: Random | Size: 50000 | Order: 3
+B-Tree Insertion: 12.7899 ms | BST Insertion: 21.4146 ms
+B-Tree Search: 2.8105 ms | BST Search: 2.5993 ms
+B-Tree Deletion: 0.0754 ms | BST Deletion: 2.6805 ms
+---------------------------------------------
+DataType: Sorted | Size: 50000 | Order: 3
+B-Tree Insertion: 6.3101 ms | BST Insertion: 8.8521 ms
+B-Tree Search: 1.1513 ms | BST Search: 0.9246 ms
+B-Tree Deletion: 0.0683 ms | BST Deletion: 0.4161 ms
+---------------------------------------------
+DataType: Skewed | Size: 50000 | Order: 3
+B-Tree Insertion: 6.8984 ms | BST Insertion: 24.8855 ms
+B-Tree Search: 3.5019 ms | BST Search: 3.6404 ms
+B-Tree Deletion: 0.3627 ms | BST Deletion: 2.6631 ms
+---------------------------------------------
+DataType: Random | Size: 50000 | Order: 4
+B-Tree Insertion: 15.0929 ms | BST Insertion: 23.5546 ms
+B-Tree Search: 2.0349 ms | BST Search: 2.7454 ms
+B-Tree Deletion: 0.0580 ms | BST Deletion: 2.4222 ms
+---------------------------------------------
+DataType: Sorted | Size: 50000 | Order: 4
+B-Tree Insertion: 4.2016 ms | BST Insertion: 15.3460 ms
+B-Tree Search: 1.5667 ms | BST Search: 1.3703 ms
+B-Tree Deletion: 0.0263 ms | BST Deletion: 0.4362 ms
+---------------------------------------------
+DataType: Skewed | Size: 50000 | Order: 4
+B-Tree Insertion: 9.7889 ms | BST Insertion: 12.6298 ms
+B-Tree Search: 1.2036 ms | BST Search: 1.5326 ms
+B-Tree Deletion: 0.0315 ms | BST Deletion: 1.2415 ms
+---------------------------------------------
+DataType: Random | Size: 50000 | Order: 5
+B-Tree Insertion: 7.9881 ms | BST Insertion: 14.1193 ms
+B-Tree Search: 1.2570 ms | BST Search: 1.4697 ms
+B-Tree Deletion: 0.0064 ms | BST Deletion: 1.5443 ms
+---------------------------------------------
+DataType: Sorted | Size: 50000 | Order: 5
+B-Tree Insertion: 7.5328 ms | BST Insertion: 10.5368 ms
+B-Tree Search: 1.5488 ms | BST Search: 1.3649 ms
+B-Tree Deletion: 0.0296 ms | BST Deletion: 0.6286 ms
+---------------------------------------------
+DataType: Skewed | Size: 50000 | Order: 5
+B-Tree Insertion: 6.9604 ms | BST Insertion: 11.4586 ms
+B-Tree Search: 1.3804 ms | BST Search: 1.4238 ms
+B-Tree Deletion: 0.0411 ms | BST Deletion: 1.3531 ms
+---------------------------------------------
+DataType: Random | Size: 100000 | Order: 2
+B-Tree Insertion: 48.8620 ms | BST Insertion: 56.1481 ms
+B-Tree Search: 3.9407 ms | BST Search: 2.3835 ms
+B-Tree Deletion: 0.0082 ms | BST Deletion: 2.1000 ms
+---------------------------------------------
+DataType: Sorted | Size: 100000 | Order: 2
+B-Tree Insertion: 25.8722 ms | BST Insertion: 23.8558 ms
+B-Tree Search: 1.6575 ms | BST Search: 2.0370 ms
+B-Tree Deletion: 0.0626 ms | BST Deletion: 0.8555 ms
+---------------------------------------------
+DataType: Skewed | Size: 100000 | Order: 2
+B-Tree Insertion: 33.0698 ms | BST Insertion: 46.8771 ms
+B-Tree Search: 3.1077 ms | BST Search: 2.1727 ms
+B-Tree Deletion: 0.0628 ms | BST Deletion: 2.9809 ms
+---------------------------------------------
+DataType: Random | Size: 100000 | Order: 3
+B-Tree Insertion: 39.7268 ms | BST Insertion: 60.6497 ms
+B-Tree Search: 3.0884 ms | BST Search: 2.7948 ms
+B-Tree Deletion: 0.0352 ms | BST Deletion: 3.0529 ms
+---------------------------------------------
+DataType: Sorted | Size: 100000 | Order: 3
+B-Tree Insertion: 12.9715 ms | BST Insertion: 29.1811 ms
+B-Tree Search: 1.4861 ms | BST Search: 0.8346 ms
+B-Tree Deletion: 0.0112 ms | BST Deletion: 0.9927 ms
+---------------------------------------------
+DataType: Skewed | Size: 100000 | Order: 3
+B-Tree Insertion: 24.1221 ms | BST Insertion: 29.7634 ms
+B-Tree Search: 1.7490 ms | BST Search: 1.3322 ms
+B-Tree Deletion: 0.0189 ms | BST Deletion: 1.1633 ms
+---------------------------------------------
+DataType: Random | Size: 100000 | Order: 4
+B-Tree Insertion: 31.3816 ms | BST Insertion: 73.5636 ms
+B-Tree Search: 5.1508 ms | BST Search: 3.5274 ms
+B-Tree Deletion: 0.0082 ms | BST Deletion: 3.8027 ms
+---------------------------------------------
+DataType: Sorted | Size: 100000 | Order: 4
+B-Tree Insertion: 11.6903 ms | BST Insertion: 18.2888 ms
+B-Tree Search: 1.2834 ms | BST Search: 1.0255 ms
+B-Tree Deletion: 0.0190 ms | BST Deletion: 0.2913 ms
+---------------------------------------------
+DataType: Skewed | Size: 100000 | Order: 4
+B-Tree Insertion: 10.9661 ms | BST Insertion: 31.6730 ms
+B-Tree Search: 1.4689 ms | BST Search: 1.3124 ms
+B-Tree Deletion: 0.0348 ms | BST Deletion: 1.1808 ms
+---------------------------------------------
+DataType: Random | Size: 100000 | Order: 5
+B-Tree Insertion: 16.8279 ms | BST Insertion: 37.1649 ms
+B-Tree Search: 1.9026 ms | BST Search: 2.0717 ms
+B-Tree Deletion: 0.0057 ms | BST Deletion: 1.7626 ms
+---------------------------------------------
+DataType: Sorted | Size: 100000 | Order: 5
+B-Tree Insertion: 5.8179 ms | BST Insertion: 17.6622 ms
+B-Tree Search: 1.1297 ms | BST Search: 0.9234 ms
+B-Tree Deletion: 0.0272 ms | BST Deletion: 0.6575 ms
+---------------------------------------------
+DataType: Skewed | Size: 100000 | Order: 5
+B-Tree Insertion: 10.2267 ms | BST Insertion: 23.1239 ms
+B-Tree Search: 1.2454 ms | BST Search: 1.0978 ms
+B-Tree Deletion: 0.0155 ms | BST Deletion: 0.8197 ms
+---------------------------------------------
+DataType: Random | Size: 500000 | Order: 2
+B-Tree Insertion: 313.7498 ms | BST Insertion: 312.5292 ms
+B-Tree Search: 2.9908 ms | BST Search: 2.6614 ms
+B-Tree Deletion: 0.0064 ms | BST Deletion: 2.3176 ms
+---------------------------------------------
+DataType: Sorted | Size: 500000 | Order: 2
+B-Tree Insertion: 169.2079 ms | BST Insertion: 132.2357 ms
+B-Tree Search: 1.6205 ms | BST Search: 0.8680 ms
+B-Tree Deletion: 0.0135 ms | BST Deletion: 0.3848 ms
+---------------------------------------------
+DataType: Skewed | Size: 500000 | Order: 2
+B-Tree Insertion: 179.0219 ms | BST Insertion: 173.4045 ms
+B-Tree Search: 1.8864 ms | BST Search: 1.1401 ms
+B-Tree Deletion: 0.0098 ms | BST Deletion: 0.8463 ms
+---------------------------------------------
+DataType: Random | Size: 500000 | Order: 3
+B-Tree Insertion: 311.3428 ms | BST Insertion: 374.7829 ms
+B-Tree Search: 3.8304 ms | BST Search: 2.9893 ms
+B-Tree Deletion: 0.0094 ms | BST Deletion: 3.7213 ms
+---------------------------------------------
+DataType: Sorted | Size: 500000 | Order: 3
+B-Tree Insertion: 112.0715 ms | BST Insertion: 114.7300 ms
+B-Tree Search: 0.8585 ms | BST Search: 0.7451 ms
+B-Tree Deletion: 0.0051 ms | BST Deletion: 0.3485 ms
+---------------------------------------------
+DataType: Skewed | Size: 500000 | Order: 3
+B-Tree Insertion: 141.1568 ms | BST Insertion: 184.2921 ms
+B-Tree Search: 2.1579 ms | BST Search: 2.5401 ms
+B-Tree Deletion: 0.0513 ms | BST Deletion: 1.4728 ms
+---------------------------------------------
+DataType: Random | Size: 500000 | Order: 4
+B-Tree Insertion: 184.9702 ms | BST Insertion: 354.4614 ms
+B-Tree Search: 3.3583 ms | BST Search: 2.8905 ms
+B-Tree Deletion: 0.0084 ms | BST Deletion: 3.6699 ms
+---------------------------------------------
+DataType: Sorted | Size: 500000 | Order: 4
+B-Tree Insertion: 65.0307 ms | BST Insertion: 154.7962 ms
+B-Tree Search: 0.7813 ms | BST Search: 0.6127 ms
+B-Tree Deletion: 0.0044 ms | BST Deletion: 0.2888 ms
+---------------------------------------------
+DataType: Skewed | Size: 500000 | Order: 4
+B-Tree Insertion: 101.0028 ms | BST Insertion: 186.9894 ms
+B-Tree Search: 2.3068 ms | BST Search: 1.9986 ms
+B-Tree Deletion: 0.0300 ms | BST Deletion: 1.4460 ms
+---------------------------------------------
+DataType: Random | Size: 500000 | Order: 5
+B-Tree Insertion: 219.6601 ms | BST Insertion: 506.9821 ms
+B-Tree Search: 2.6980 ms | BST Search: 2.7735 ms
+B-Tree Deletion: 0.0074 ms | BST Deletion: 3.5535 ms
+---------------------------------------------
+DataType: Sorted | Size: 500000 | Order: 5
+B-Tree Insertion: 61.7790 ms | BST Insertion: 115.0336 ms
+B-Tree Search: 1.4449 ms | BST Search: 1.4414 ms
+B-Tree Deletion: 0.0362 ms | BST Deletion: 0.5207 ms
+---------------------------------------------
+DataType: Skewed | Size: 500000 | Order: 5
+B-Tree Insertion: 86.5376 ms | BST Insertion: 235.9139 ms
+B-Tree Search: 2.2115 ms | BST Search: 1.8539 ms
+B-Tree Deletion: 0.0277 ms | BST Deletion: 1.0204 ms
+---------------------------------------------
+]]></system-out>
+  </testcase>
+</testsuite>
